@@ -1,19 +1,14 @@
-import {Flex, Text} from '@chakra-ui/react'
+import { Flex, Text } from "@chakra-ui/react";
+const date = new Date();
 
-
-
-
-const Footer =()=>{
-    return(
-        <Flex  
-        as = 'footer'
-        justifyContent ='center'
-        py='6'
-        >
-            <Text>@Copyright 2021. P-store all rights are reserved.</Text>
-        </Flex>
-
-    )
-}
+const Footer = () => {
+  return (
+    <Flex as="footer" justifyContent="center" py="6">
+      <Text>
+        @Copyright {date.getFullYear()}. P-store all rights are reserved.
+      </Text>
+    </Flex>
+  );
+};
 
 export default Footer;
