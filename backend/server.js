@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === "production") {
     res.send("API is running");
   });
 }
-//ERROR MIDDLEWARE
+//ERROR MIDDLEWARE Will run after a request comes to this end point's and results a not found or error
 
 app.use(notFound);
 app.use(errorHandler);

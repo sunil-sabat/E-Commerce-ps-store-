@@ -11,7 +11,7 @@ import connectDB from "./config/db.js";
 dotenv.config();
 
 connectDB();
-
+//db conection
 const importData = async () => {
   try {
     await Order.deleteMany();
